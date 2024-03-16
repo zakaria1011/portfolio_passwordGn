@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+</head>
+<body>
+    <h1>dashboard</h1>
+    <form method="POST">
+        <div>
+            <label for="length">pass word length :</label>
+            <input type="number" id="length" name="langth" min="1" required>
+        </div>
+        <div>
+            <input type="checkbox" id="include_uppercase" name="include_uppercase" value="include_uppercase">
+            <label for="include_uppercase"> Include Uppercase Caractere</label>
+        </div>
+        <div>
+            <input type="checkbox" id="include_spacial" name="include_special" value="include_special">
+            <label for="include_special"> Include Special Caractere</label>
+        </div>
+        <button type="submit">Generate Password</button>
+    </form>
+    {% if password %}
+        <h2>Generated Password:</h2>
+        <p>{{ password }}</p>
+    {% endif %}
+</body>
+</html>

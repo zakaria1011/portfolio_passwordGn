@@ -1,0 +1,21 @@
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+    margin: 20px;
+    font-size: 16px;
+}
+#container{
+    margin-left: 600px;
+    margin-top: 200px;
+    display: flex;
+}
